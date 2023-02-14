@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+      .b { height: 100px; background-color: #bbdefb; }
+    </style>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+    <script>
+      $( document ).ready( function() {
+        $( '.a' ).click( function() {
+          $( '.b' ).slideToggle( 200, 'linear', function() {
+            // alert( 'Toggled' );
+          } );
+        } );
+      } );
+
+      $( document ).ready( function() {
+        $( '.c' ).click( function() {
+          $( '.b' ).slideToggle( 200, 'linear', function() {
+            // alert( 'Toggled' );
+          } );
+        } );
+      } );
+
+      $(document).ready(function(){
+
+$(".tex").click(function(){
+
+    $(".tex").slideToggle("slow");
+
+  });
+
+});
+
+$(".tex").click(function(){
+
+$(".tex").slideToggle("slow");
+
+});
+
+
+    </script>
+
+
+  </head>
+  <body id="body ">
+    <!--바디 눌렀을때 토글닫히기-->
+    <input  type="text" class="a" placeholder="  입력">                  <!--눌렀을때 토글닫히기-->
+    <p><input type="text" class="a" placeholder="...?"></p>
+      <div class="b">   
+
+      <textarea style="text-align:center" class="tex">
+  광고제거 
+      </textarea>
+      
+      </div>
+
+      <div class="c" style="height: 50vh;"></div>
+  </body>
+</html>

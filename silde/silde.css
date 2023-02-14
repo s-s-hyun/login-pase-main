@@ -1,0 +1,43 @@
+body,ul,p{
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration-line: none;
+}
+a:visited{
+    color : black;  
+}
+a:link {
+    color : black;
+}
+a:hover{
+    color : red;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+.list1{
+    flex-direction: column; 
+    display:none;
+}
+.memu_list{
+    display: flex;
+    justify-content: space-around;
+}
+.memu_list p{
+    border: 1px black solid;
+}
+.memu_list_target{
+    width: 25%;
+    text-align : center;
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+.login a{
+    padding: 0 12px 0 11px;
+}

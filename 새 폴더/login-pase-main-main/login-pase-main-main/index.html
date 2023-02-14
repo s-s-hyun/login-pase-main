@@ -11,10 +11,12 @@
     <title>나의 웹페이지</title>
     <style>
         .b {
+            display: none;
             height: 100px;
-            width: 200px;
+            width: 600px;
             background-color: rgb(65, 128, 65);
         }
+
     </style>
     <script src="./js/main.js"></script>
     <script>
@@ -28,8 +30,9 @@
                     var password_pass = $("#input_password").val()
                     if (id_id == id) {
                         if (password_pass == password) {
-                            alert('로그인에 성공했습니다. 접속합니다');
-                            location.href = "https://www.naver.com/"
+                            $('.b').slideToggle(200, 'linear', function () {});
+                           alert('로그인에 성공했습니다. 접속합니다');
+                           window.open('http://www.naver.com ', '_blank');
                             console.log(id_id)
                         } else { alert("올바른 비밀번호를 입력해주시기 바랍니다.") }
                     } else { alert("올바른 아이디를 입력해주시기 바랍니다.") }
@@ -42,8 +45,9 @@
                     var password_pass = $("#input_password").val()
                     if (id_id == id) {
                         if (password_pass == password) {
+                            $('.b').slideToggle(200, 'linear', function () {});
                             alert('로그인에 성공했습니다. 접속합니다');
-                            location.href = "https://www.naver.com/"
+                            window.open('http://www.naver.com ', '_blank');
                             console.log(id_id)
                         } else { alert("올바른 비밀번호를 입력해주시기 바랍니다.") }
                     } else { alert("올바른 아이디를 입력해주시기 바랍니다.") }
@@ -51,18 +55,16 @@
             });
 
             $('button.a').click(function () {
-
-                $('.b').slideToggle(500, 'swing', function () {
-                    var id_id = $("#input_id").val()
+                var id_id = $("#input_id").val()
                     var password_pass = $("#input_password").val()
                     if (id_id == id) {
                         if (password_pass == password) {
+                            $('.b').slideToggle(200, 'linear', function () {});
                             alert('로그인에 성공했습니다. 접속합니다');
-                            location.href = "https://www.naver.com/"
+                            window.open('http://www.naver.com ', '_blank');
                             console.log(id_id)
                         } else { alert("올바른 비밀번호를 입력해주시기 바랍니다.") }
                     } else { alert("올바른 아이디를 입력해주시기 바랍니다.") }
-                });
 
             });
 
