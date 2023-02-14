@@ -10,17 +10,26 @@
 
 
     <script>
+      // 맨 위에 인풋 작동 코드
       $( document ).ready( function() {
-        $( '.a' ).click( function() {
+        $( '.d' ).click( function() {
           $( '.b' ).slideToggle( 200, 'linear', function() {
             // alert( 'Toggled' );
           } );
         } );
       } );
-
+      // 2번째 인풋 작동 코드
+      $( document ).ready( function() {
+        $( '.a' ).click( function() {
+          $( '.b' ).slideDown( 200, 'linear', function() {
+            // alert( 'Toggled' );
+          } );
+        } );
+      } );
+      // div 누르면 작동 코드
       $( document ).ready( function() {
         $( '.c' ).click( function() {
-          $( '.b' ).slideToggle( 200, 'linear', function() {
+          $( '.b' ).slideUp( 200, 'linear', function() {
             // alert( 'Toggled' );
           } );
         } );
@@ -36,13 +45,6 @@ $(".tex").click(function(){
 
 });
 
-$(".tex").click(function(){
-
-$(".tex").slideToggle("slow");
-
-});
-
-
     </script>
 
 
@@ -50,7 +52,7 @@ $(".tex").slideToggle("slow");
   <body id="body ">
     <!--바디 눌렀을때 토글닫히기-->
     <input  type="text" class="a" placeholder="  입력">                  <!--눌렀을때 토글닫히기-->
-    <p><input type="text" class="a" placeholder="...?"></p>
+    <p><input type="text" class="d" placeholder="...?"></p>
       <div class="b">   
 
       <textarea style="text-align:center" class="tex">
@@ -58,7 +60,6 @@ $(".tex").slideToggle("slow");
       </textarea>
       
       </div>
-
       <div class="c" style="height: 50vh;"></div>
   </body>
 </html>
