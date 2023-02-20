@@ -1,7 +1,7 @@
 let id = "sim"
 let password = "1234"
 
-$("#asd").on("click",function(){
+$("#a").on("click",function(){
     var id_id = $("#input_id").val()
     var password_pass = $("#input_password").val()
     if(id_id == id){
